@@ -1,7 +1,9 @@
 # KustomizeZPC - Vulnerable by design Kustomize deployment
 
 [![Maintained by Zsclaer-BD-SA Team](https://img.shields.io/badge/maintained%20by-Zscaler--BD--SA%20Team-blue)](https://github.com/zscaler-bd-sa)
+
 ![Kustomize](images/kustomize_logo.png)
+
 Demonstrating secure and non secure kubernetes IaC manifests using Kustomize.io (`kubectl -k`) overlays.
 
 ## Whats in the repo
