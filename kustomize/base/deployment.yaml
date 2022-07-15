@@ -20,4 +20,6 @@ spec:
       containers:
       - image: willguibr/kustomizezpc:0.1
         name: kustomizezpc
+        resources: {}
+
 

@@ -3,14 +3,17 @@ kind: Service
 metadata:
   labels:
     app: kustomizezpc
-  name: goatlb
+  name: zpclb
   namespace: kustomizezpc
 spec:
   ports:
-  - name: goatport
+  - name: zpcport
     protocol: TCP
-    targetPort: 8080
+    targetPort: 80
     port: 80
   selector:
     app: kustomizezpc
   type: LoadBalancer
+status:
+  loadBalancer: {}
+
