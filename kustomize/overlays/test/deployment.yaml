@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kustomizegoat
-  namespace: kustomizegoat
+  name: kustomizezpc
+  namespace: kustomizezpc
 spec:
   replicas: 5
   template:
@@ -18,5 +18,5 @@ spec:
               - key: app
                 operator: In
                 values:
-                - kustomizegoat
+                - kustomizezpc
             topologyKey: "kubernetes.io/hostname"

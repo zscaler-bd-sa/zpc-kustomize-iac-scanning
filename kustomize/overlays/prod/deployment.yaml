@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kustomizegoat
-  namespace: kustomizegoat
+  name: kustomizezpc
+  namespace: kustomizezpc
 spec:
   template:
     metadata:
@@ -17,11 +17,11 @@ spec:
               - key: app
                 operator: In
                 values:
-                - kustomizegoat
+                - kustomizezpc
             topologyKey: "kubernetes.io/hostname"
       containers:
-      - image: eurogig/kustomizegoat@sha256:f152b255ec14aa06ed59fbccae66d9d90f751633b5c2c094b7c810ad53314723
-        name: kustomizegoat
+      - image: eurogig/kustomizezpc@sha256:f152b255ec14aa06ed59fbccae66d9d90f751633b5c2c094b7c810ad53314723
+        name: kustomizezpc
         imagePullPolicy: Always
         resources:
           limits:
