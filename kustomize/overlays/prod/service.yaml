@@ -4,5 +4,5 @@ metadata:
   labels:
     app: kustomizezpc
     env: prod
-  name: goatlb
+  name: zpclb
   namespace: kustomizezpc

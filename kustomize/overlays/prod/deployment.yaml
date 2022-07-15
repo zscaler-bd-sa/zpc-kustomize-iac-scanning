@@ -20,7 +20,7 @@ spec:
                 - kustomizezpc
             topologyKey: "kubernetes.io/hostname"
       containers:
-      - image: eurogig/kustomizezpc@sha256:f152b255ec14aa06ed59fbccae66d9d90f751633b5c2c094b7c810ad53314723
+      - image: willguibr/kustomizezpc@sha256:5a288a39cc3ec458aaf84a1c85313787406360214b018556386d8c5726f82a7a
         name: kustomizezpc
         imagePullPolicy: Always
         resources:
