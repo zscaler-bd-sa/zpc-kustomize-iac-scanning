@@ -29,7 +29,7 @@ jobs:
           region : 'US'
           iac_dir : '../../'
           iac_file : '../../'
-          output_format : 'yaml+human+github-sarif'
+          output_format : 'human+github-sarif'
           fail_build : 'false'
       - name: Upload SARIF file
         if: ${{ success() || failure() && (steps.zscaler-iac-scan.outputs.sarif_file_path != '') }}
