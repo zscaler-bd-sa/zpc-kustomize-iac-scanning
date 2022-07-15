@@ -1,13 +1,18 @@
 # KustomizeZPC - Vulnerable by design Kustomize deployment
+
 [![Maintained by Zsclaer-BD-SA Team](https://img.shields.io/badge/maintained%20by-Zscaler--BD--SA%20Team-blue)](https://github.com/zscaler-bd-sa)
 
-![Terragoat](images/kustomize_logo.png)
+![Kustomize](images/kustomize_logo.png)
 
 Demonstrating secure and non secure kubernetes IaC manifests using Kustomize.io (`kubectl -k`) overlays.
 
 ## Whats in the repo
 
 The manifests in this respository, demonstrate how to take a basic NGINX kubernetes deployment with many security issues, and use [Zscaler Posture Control (ZPC)](https://www.zscaler.com/products/posture-control) to produce a fully compliant manifest to acheive the same NGINX deployment.
+
+> :warning:  **DO NOT deploy this template examples in a production environment or alongside any sensitive resources.**
+
+> :warning:  **All passwords in this repo are used as an example and should not be used in production**
 
 Using kustomize overlays (environments) we see both forms of these configurations here:
 
